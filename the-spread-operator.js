@@ -37,6 +37,7 @@ console.log(arr5)*/
  */
 
 // Regular function call 
+/*
 const SumAll=(a,b,c)=>a+b+c;
 let sum=SumAll(3,3,3)
 console.log(sum)
@@ -51,6 +52,61 @@ const sumRest=(a,b,c, ...rest)=>{
         sum+=i
     }
 return sum;
-}
-let newSum=sumRest(1,2,3,4,5,6)
+}*/
+/*
+let newSum=sumRest(1,2,3,4,5,6,)
 console.log(newSum)
+*/
+
+
+
+
+
+/**
+ * To run this file in Gitpod, use the 
+ * command node destructuring.js in the terminal
+ */
+
+// Destructuring arrays
+let ages=[30,60,70]
+/*let john=ages[0]
+let mary=ages[1]
+let joe=ages[2]
+*/
+let [john,mary,joe]=ages
+console.log(john,mary,joe)
+// Destructuring objects
+let jobs={
+mike:"designer",
+jill:"developer",
+max:"accountant",
+}
+let{mike,jill,max}=jobs
+console.log(mike,jill,max)
+// Destructuring subsets
+let languages=["english","spanish","german","france","japanese"]
+let =[johnnative,secondJohn]=languages
+console.log(johnnative,secondJohn)
+let[, , , maryNative,marysecendory]=languages
+console.log(maryNative,marysecendory)
+// Using rest parameter syntax
+
+let lanugestwo={
+firstlanugage:"english",
+secondlanugage:"spanish",
+thirdlanugage:"german",
+fourthlanugage:"france"
+}
+let {firstlanugage,secondlanugage}=lanugestwo
+console.log(firstlanugage,secondlanugage)
+
+let person={
+    brian:"pizza",
+    chris:"pasta",
+    abby:"rice",
+    steve:"steak",
+}
+let {brian,chris, ...rest}=person
+console.log(brian)
+console.log(chris)
+console.log(rest)
