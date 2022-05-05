@@ -3,7 +3,7 @@
  * command node the-spread-operator.js in the terminal
  */
 
-/* 
+
 // No spread operator
 let arr1=[4,3,2]
 let arr2=arr1
@@ -20,10 +20,10 @@ console.log(arr4)
 let obj1={a:1,b:2,c:3}
 let obj2={...obj1,d:4}
 console.log(obj1)
-console.log(obj2)*/
+console.log(obj2)
 // Copying only part of an array/object
-/*let arr5=[...arr1,arr2,arr3,"x"]
-console.log(arr5)*/
+let arr5=[...arr1,arr2,arr3,"x"]
+console.log(arr5)
 
 
 
@@ -37,7 +37,7 @@ console.log(arr5)*/
  */
 
 // Regular function call 
-/*
+
 const SumAll=(a,b,c)=>a+b+c;
 let sum=SumAll(3,3,3)
 console.log(sum)
@@ -52,11 +52,11 @@ const sumRest=(a,b,c, ...rest)=>{
         sum+=i
     }
 return sum;
-}*/
-/*
+}
+
 let newSum=sumRest(1,2,3,4,5,6,)
 console.log(newSum)
-*/
+
 
 
 
